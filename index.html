@@ -1,0 +1,216 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href='style.css'>
+        <title>Jaeyong Hyun</title>
+    </head>
+<body>
+    <div class='headerwrap'>
+        <div class='header'>
+            <span class='header_title'><a href='index.html'>ENERGETIC ENERGY SOLVER</a></span>
+            <span class=list ><img id='listimg' src= 'list.png' onclick='listhide("listh")'></span>
+        </div>
+        <div id='listh'>
+            <div class='listmov' id='home' onclick='home()'>
+                Home
+            </div>
+            <div class='listmov' id='int' onclick='interests()'>
+                Interests
+            </div>
+            <div class='listmov' id='edu' onclick='education()'>
+                Education
+            </div>
+            <div class='listmov' id='exp' onclick='experiences()'>
+                Experiences
+            </div>
+            <div class='listmov' id='ski' onclick='skills()'>
+                Skills
+            </div>
+            <div class='listmov' id='pub' onclick='publications()'>
+                Publications
+            </div>
+        </div>
+    </div>
+    <div class='main'>
+        <div class='mleft'>
+            <div style='width:200px; height:200px'>
+                <img id='self-portrait' src='self-portrait.jpg'>
+            </div>
+            <h2 >Jaeyong Hyun</h2>
+            <span style='font-size: 18px;color: gray;text-align:center;'>Korea Advanced Institute of Science and Technology</span>
+        </div>
+        <div class='mmain'>
+            <div class='biography'>
+                <h2 class='mctitle'>Biography</h2>
+                <div class='biocontent'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </div>
+            </div>
+
+            <ul class='maincontents'>
+                <li class='mc'>
+                    <span class='mctitle' id='Interests'>Interests</span><br>
+                    <hr class='mcline'>
+                    <div class='mcdiv'>
+                        <ul class='mccontent'>
+                            <li>Energy storage enough to replace fossil fuel</li>
+                            <li>Sustainable mobility system</li>
+                            <li></li>
+                        </ul>        
+                    </div>
+                </li>
+                <li class='mc'>
+                    <span class='mctitle' id='Education'>Education</span><br>
+                    <hr class='mcline'>
+                    <div class='mcdiv'>
+                        <div class='mcdate'>Mar '13 ~ Present</div>
+                        <div class='mccontent'>
+                            <h3>Korea Advanced Institute of Science and Technology</h3>
+                            Department of Chemistry  (B.S.)<br>
+                            
+                        </div>        
+                    </div>
+                </li>
+
+                <li class='mc' id='Experiences'>
+                    <span class='mctitle'>Experiences</span><br>
+                    <hr class='mcline'>
+                    <div class='mcdiv'>
+                        <div class='mcdate'>1. </div>
+                        <div class='mccontent'>
+                        <br>
+                            
+                        </div>        
+                    </div>
+                    <div class='mcdiv'>
+                        <div class='mcdate'>2. </div>
+                        <div class='mccontent'>
+                        <br>
+                            
+                        </div>        
+                    </div>
+                </li>
+                <li class='mc' id='Skills'>
+                    <span class='mctitle'>Skills</span><br>
+                    <hr class='mcline'>
+                    <div class='mcdiv'>
+                        <div class='mcdate'>1. </div>
+                        <div class='mccontent'>
+                        <br>
+                            
+                        </div>        
+                    </div>
+                    <div class='mcdiv'>
+                        <div class='mcdate'>2. </div>
+                        <div class='mccontent'>
+                        <br>
+                            
+                        </div>        
+                    </div>
+                </li>
+                <li class='mc' id='Publications'>
+                    <span class='mctitle'>Publications</span><br>
+                    <hr class='mcline'>
+                    <div class='mcdiv'>
+                        <div class='mcdate'>1. </div>
+                        <div class='mccontent'>
+                            <br>"Water as a Hydroxy Source in a Rh-III-Catalyzed Directed C-H Hydroxylation of 2-Arylpyridines", ASIAN JOURNAL
+OF ORGANIC CHEMISTRY, (2017)<br>
+                            
+                        </div>        
+                    </div>
+                    <div class='mcdiv'>
+                        <div class='mcdate'>2. </div>
+                        <div class='mccontent'>
+                            <br>"Rh-III-Catalyzed Directed C-H Bromination and Iodination to Synthesize Atropisomeric Biaryls", ASIAN JOURNAL
+                            OF ORGANIC CHEMISTRY, (2016)<br>
+                            
+                        </div>        
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class='footer'> 
+            <span class='foot' style='border-right:solid black 0.5px; ' onclick=listhide("contact")>  Contact    </span>
+            <a class='foot' href='tel:01090041208' style='padding-left:40px;' > Phone  </a>            
+            <a class='foot' href='mailto:jyhyodi@kaist.ac.kr'>  Mail  </a>
+            <a class='foot' href='https://www.linkedin.com/in/%EC%9E%AC%EC%9A%A9-%ED%98%84-0b5b47b0/' target='_blank'>  Linkedin</a>
+            <a class='foot' href='https://www.facebook.com/jaeyong.hyun.14/' target='_blank'>  Facebook</a>
+            <a class='foot' href='https://www.instagram.com/hyunjaeyong/' target='_blank'>  Instagram</a>
+    </div>
+ <div id='contact'>
+     
+        <div id= 'contactbox'>
+            <span>Title:</span><input type="text" id='contacttitle'></p>
+            <span>E-mail:</span><input type="text" id='contactmail' value='abc@abc.com'></p>
+            <span>Content:</span></p><input type="text" id='contacttext'></p>
+            <input type='button' value='Summit' onclick=confirmtxt()>
+        </div>
+        <div id= 'contactbg'></div>
+    </div>
+
+</body>
+<script>
+    
+    let listhide=(hidid)=>{
+        let v=document.getElementById(hidid);
+            if (v.style.display ==='none'){
+                v.style.display = 'block'
+            } else{
+                v.style.display = 'none'
+            }
+    }
+    let chg_color = (col) =>{
+        tar=document.getElementById('home');
+        if(window.scrollY==document.getElementById('Interests').offsetTop){
+            console.log('aaa');
+            tar.style.backgroundColor=`${col}`;
+        }
+    }
+    let  home = () => {
+        window.scrollTo(0,0);
+    }
+    let  interests = () => {
+        let a=document.getElementById('Interests');
+        let b=a.offsetTop;
+        window.scrollTo(0,b);
+    }
+    let  education = () => {
+        let a=document.getElementById('Education');
+        let b=a.offsetTop;
+        window.scrollTo(0,b);
+    }
+    let  experiences = () => {
+        let a=document.getElementById('Experiences');
+        let b=a.offsetTop;
+        window.scrollTo(0,b);
+    }
+    let  skills = () => {
+        let a=document.getElementById('Skills');
+        let b=a.offsetTop;
+        window.scrollTo(0,b);
+    }
+    let  publications = () => {
+        let a=document.getElementById('Publications');
+        let b=a.offsetTop;
+        window.scrollTo(0,b);
+    }
+    const confirmtxt = () => {
+        let a=document.getElementById("contacttitle").value;
+        let b=document.getElementById("contactmail").value;
+        let c=document.getElementById("contacttext").value;
+        let d=document.getElementById('contact');
+        if (confirm(` Title : ${a}\n Mail : ${b}\n\n Content : ${c} \n \n Is that right?`)===true){
+            alert('Thank you for your inquiry')
+            d.style.display='none'
+        }
+    }
+    window.onload=()=>{
+        chg_color('gray');
+    }
+
+</script>
+
+</html>

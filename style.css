@@ -1,0 +1,168 @@
+body{
+    margin:0px;
+    display:flex;
+    flex-direction:column;
+}
+a {
+    text-decoration:none;
+    color:black;
+}
+
+.headerwrap{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    box-shadow: 0px 4px 3px -3px grey;
+    align-items:center;
+    position:fixed;
+    background-color:whitesmoke;
+}
+.header_title{
+    flex-grow:0;
+    padding: 10px;
+    padding-left:50px;
+    display:inline-flex;
+    font-size: 23px;
+    font-weight: 700;
+    color:black;
+}
+
+.header{
+    display:flex;
+    width:90%;
+    align-items:center;
+    height:50px;
+    margin:0px;
+}
+.list{
+    flex-grow:1;
+    align-self:center;
+  
+}
+#listimg{
+    float:right;    
+    height:30px;
+    width:30px;
+    padding:5px;
+}
+#listhide{
+    width:1000px;
+    display:none;
+}
+.listmov{
+    margin:0px;
+    padding-left:50px;
+    height:30px;
+
+    border-radius:5%;
+
+}
+.main{
+    padding-top:30px;
+    display:flex;
+    width:100%;
+    justify-content:center;
+}
+.mleft{
+    padding-top:50px;
+    width:250px;  
+    display:flex;
+    flex-direction:column;
+    justify-self: left;
+    align-items:center;
+}
+.mmain{
+    width:750px;
+}
+.biography{
+    padding:40px;
+}
+.biocontent{
+    padding-top:10px;
+}
+
+.mc{
+    list-style:none;
+    width:700px;
+}
+.mctitle{
+    font: 22px black ;
+    font-weight:bold;
+}
+.mcline{
+    color : black;
+    width: 100%;
+}
+.mcdiv{
+    display:flex;
+}
+.mcdate{
+    padding-top:20px;
+    width:200px;
+    font: 15px;
+}
+.mccontent{
+    padding-bottom:40px;
+}
+.footer{
+    border-top: solid black 1px;
+    padding:15px;
+    font-size:20px;
+    display:flex;
+    justify-content:center;
+}
+.foot{
+    padding: 5px;
+    padding-right: 40px;
+}
+#self-portrait{
+    width:201px;
+    height:201px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+@media(max-width:768px){
+    .main{
+        flex-direction:column;
+        
+    }
+    .mleft{
+        width:100%;
+    }
+
+}
+#contact{
+    height:100%;
+    width:100%;
+    position:absolute;
+    display:none;
+    z-index: 0;
+}
+#contactbox{
+    z-index:1;
+    height: 1000px;
+    width: 55%;
+    left: 20%;
+    background-color: white;
+    position:absolute;
+    top: 50px;
+    opacity:1;
+    padding: 40px;
+
+}
+#contactbg{
+    height:100%;
+    width:100%;
+    position:absolute;
+    background-color:grey;
+    opacity: 0.5;    
+    z-index: 0;
+}
+#contacttitle{
+    width:80%
+}
+#contacttext{
+    height: 80%;
+    width: 85%;
+}
