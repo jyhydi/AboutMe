@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head></head>
+<body>
+<a href='index.html'><h1>Go Back</h1></a>
+
+<div id = 'race_Season'></div>
+<div id = 'race_round'></div>
+<script>
+fetch('http://ergast.com/api/f1/current.json')
+.then(function(res){
+    return res.json();
+})
+.then( function(res) {
+    let tag='';
+    let rdata=res.MRData;
+    let rtable=rdata.RaceTable;
+    let rraces=rtable.Races;
+    document.getElementById('race_Season').innerHTML="<p>Season : "+rtable.season+'</p>';
+
+     for (let Race of rraces){
+      tag=tag+"<p>Round"+Race.round+".  "+Race.raceName+", date: "+Race.date+'</p>' ;
+         document.getElementById('race_round').innerHTML=tag;
+    }
+});
+</script>
+</body>
+</html>

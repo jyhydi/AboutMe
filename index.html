@@ -1,10 +1,11 @@
 <!doctype HTML>
-<html>
+<html>    
     <head>
         <meta charset='utf-8'>
         <link rel='stylesheet' href='style.css'>
-        <title>Jaeyong Hyun</title>
+        <title id='title_date'>Jaeyong Hyun,</title>
     </head>
+
 <body>
     <div class='headerwrap'>
         <div class='header'>
@@ -29,6 +30,9 @@
             </div>
             <div class='listmov' id='pub' onclick='publications()'>
                 Publications
+            </div>
+            <div class='listmov' id='pub'>
+                <a href='F1.html'>F1</a>
             </div>
         </div>
     </div>
@@ -150,10 +154,17 @@ OF ORGANIC CHEMISTRY, (2017)<br>
         </div>
         <div id= 'contactbg'></div>
     </div>
-
 </body>
 <script>
-    
+
+     let PrintTime=setInterval( () => {
+            let today= new Date();
+            let hh= today.getHours();
+            let mm= today.getMinutes();
+            let ss= today.getSeconds();
+            document.getElementById('title_date').innerHTML=`Jaeyong Hyun, ${hh}:${mm}:${ss}`;
+     },1000);
+
     let listhide=(hidid)=>{
         let v=document.getElementById(hidid);
             if (v.style.display ==='none'){
@@ -210,7 +221,13 @@ OF ORGANIC CHEMISTRY, (2017)<br>
     window.onload=()=>{
         chg_color('gray');
     }
+    window.onscroll = function() {scrol()};
 
+const scrol = () => {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("listh").style.display= "none";
+  }
+}
 </script>
 
 </html>

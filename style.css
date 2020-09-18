@@ -45,7 +45,7 @@ a {
     width:30px;
     padding:5px;
 }
-#listhide{
+#listh{
     width:1000px;
     display:none;
 }
@@ -53,7 +53,7 @@ a {
     margin:0px;
     padding-left:50px;
     height:30px;
-
+    width:500px;
     border-radius:5%;
 
 }
