@@ -1,0 +1,51 @@
+<!doctype HTML>
+<meta charset='utf-8'>
+<html>
+    <head>
+
+    </head>
+    <body>
+<input type="text" id='nam'>  <br>
+<input type="text" id='emai' value='asdf'> <br>
+<input type="text" id= 'ag'> 
+<input type='button' onclick='hit()'>
+    </body>
+<script>
+    let data = {
+        name: 'aa', email: 'bb', age: 0
+    };
+const hit = () =>{
+    
+    data.name= document.getElementById('nam').value;
+    data.email=document.getElementById('emai').value;
+    data.age=document.getElementById('ag').value;
+    data.age=Number(data.age);
+    fetch('http://15.165.15.18/riders/register',{
+method: "POST",
+headers: {
+    "Content-Type": "application/json"
+},
+body: JSON.stringify(data),
+
+})
+.then(res => res.json())
+.then((data) =>{
+    console.log(data.status);
+    if(data.status==201){
+        alert("성공!");
+    }else if(data.status==4001){
+        alert('이름이 없어요!');
+    }else if(data.status==4002){
+        alert('이메일이 없어요!');
+    }else if(data.status==4003){
+        alert('나이가 없어요!');
+    }
+})
+}
+
+
+</script>
+
+
+
+</html>
